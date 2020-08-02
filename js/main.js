@@ -57,5 +57,3 @@ $(document).ready(function(){
   });
   //Scroll Button END 
 });
-
-git clone https://github.com/Wartera/wartera.github.io
