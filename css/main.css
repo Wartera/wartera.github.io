@@ -1,0 +1,118 @@
+
+/*Scrool Button*/
+#ScroolButton {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#ScroolButton:hover {
+  cursor: pointer;
+}
+
+#ScroolButton.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 500px) {
+
+  #button {
+    margin: 30px;
+  }
+}
+
+/*Scrool Button END*/
+
+/*Navbar*/
+.list-group-horizontal-lg{
+    max-width: 1000px;
+    overflow-x:scroll ;
+    max-height: fit-content;
+}
+/*Navbar END*/
+
+/*Owl Carousel*/
+.carousel-wrap {
+    position: relative;
+    height: 300px !important;
+    width: 90%;
+    margin: auto;
+  }
+  .owl-carousel .owl-nav{
+    overflow: hidden;
+    height: 0px;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span, 
+  .owl-theme .owl-dots .owl-dot:hover span {
+      background: #2caae1;
+  }
+
+  .owl-carousel .item {
+      text-align: center;
+  }
+  
+  .owl-carousel .nav-btn{
+      height: 47px;
+      position: absolute;
+      width: 26px;
+      cursor: pointer;
+      top: 170px !important;
+  }
+
+  .owl-carousel .owl-prev.disabled,
+  .owl-carousel .owl-next.disabled{
+    pointer-events: none;
+    opacity: 0.2;
+  }
+
+  .owl-carousel .prev-slide{
+      background: url("../img/nav-icon.png") no-repeat scroll 0 0;
+      left: -33px;
+  }
+  .owl-carousel .next-slide{
+      background: url("../img/nav-icon.png") no-repeat scroll -24px 0px;
+      right: -33px;
+  }
+  .owl-carousel .prev-slide:hover{
+     background-position: 0px -53px;
+  }
+  .owl-carousel .next-slide:hover{
+    background-position: -24px -53px;
+  }
+
+  span.img-text {
+    text-decoration: none;
+    outline: none;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    cursor: pointer;
+    width: 100%;
+    font-size: 23px;
+    display: block;
+    text-transform: capitalize;
+  }
+  span.img-text:hover {
+    color: #2caae1;
+  }
+  .owl-carousel .owl-item img{
+      height: 400px !important;
+  }
+  /*Owl Carousel END*/
+
+#sss .card,#hakkimizda .card{
+    border: 0 !important;
+}
