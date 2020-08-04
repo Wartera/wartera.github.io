@@ -1,4 +1,14 @@
 
+body{
+  background-color: #f5f4f0;
+}
+
+.card{
+  border: 0 !important;
+}
+
+
+
 /*Scrool Button*/
 #ScroolButton {
   display: inline-block;
@@ -15,38 +25,272 @@
   visibility: hidden;
   z-index: 1000;
 }
-
 #ScroolButton:hover {
   cursor: pointer;
 }
-
 #ScroolButton.show {
   opacity: 1;
   visibility: visible;
 }
-
-@media (min-width: 500px) {
-
-  #button {
-    margin: 30px;
-  }
-}
-
 /*Scrool Button END*/
 
-/*Navbar*/
-.list-group-horizontal-lg{
+/* Navbar */
+nav .collapse .nav-link{
+  color: #4a270b !important;
+  font-size: large;
+  font-family: 'Recursive', sans-serif;
+}
+nav .collapse .nav-link:hover{
+  color: #da840d !important;
+}
+nav .card-img-top:hover{
+  padding: 1px;
+  border: 1px solid #da850da1;
+}
+nav .dropdown-menu{
+  padding: 0;
+}
+nav .card-body{
+  font-family: 'Righteous', cursive;
+}
+nav .card .card-title a{
+  color: #da840d !important;
+  text-decoration: none;
+  font-weight: bolder;
+}
+nav .card .card-title a:hover{
+  color: #ad6902 !important;
+  text-decoration: none;
+}
+nav ul li.list-group-item{
+  border:none;
+}
+nav .card{
+  padding-top: 0;
+}
+.scrollbar::-webkit-scrollbar-track
+ {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+   border-radius: 10px;
+   background-color: #F5F5F5;
+ }
+ 
+ .scrollbar::-webkit-scrollbar
+ {
+   width: 12px;
+   background-color: #F5F5F5;
+ }
+ 
+ .scrollbar::-webkit-scrollbar-thumb
+ {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+   background-color: #555;
+ }
+/* Navbar END */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  body{
+    background-color: rgba(204, 11, 11, 0.774);
+  }
+  /*Navbar */
+  nav .logo{
+    width: 120px;
+    height: 90px;
+  }
+  nav .siparis-logo {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  nav .collapse .nav-link{
+    font-size: medium;
+  }
+  nav .dropdown-menu .list-group-horizontal{
+    max-width: 450px;
+    overflow-x:scroll ;
+    max-height: fit-content;
+  }
+  nav .card-img-top{
+    width: 120px;
+    height: 120px;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu{
+    border: 0.5px solid rgba(163, 163, 163, 0.699);
+    border-radius: 10px;
+  }
+  nav .card{
+    font-size: smaller !important;
+  }
+  /*Navbar END*/
+
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+  /*Navbar */
+  nav .logo{
+    width: 120px;
+    height: 90px;
+  }
+  nav .siparis-logo {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  nav .collapse .nav-link{
+    font-size: medium;
+  }
+  nav .dropdown-menu .list-group-horizontal{
+    max-width: 500px;
+    overflow-x:scroll ;
+    max-height: fit-content;
+  }
+  nav .card-img-top{
+    width: 120px;
+    height: 120px;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu{
+    border: 0.5px solid rgba(163, 163, 163, 0.699);
+    border-radius: 10px;
+  }
+  nav .card{
+    font-size: smaller !important;
+  }
+  /*Navbar END*/
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+  /*Navbar */
+  nav .logo{
+    width: 150px;
+    height: 100px;
+  }
+  nav .siparis-logo {
+    width: 180px;
+    height: 70px;
+  }
+
+  nav .collapse .nav-link{
+    font-size: medium;
+  }
+  nav .dropdown-menu .list-group-horizontal{
+    max-width: 700px;
+    overflow-x:scroll ;
+    max-height: fit-content;
+  }
+  nav .card-img-top{
+    width: 120px;
+    height: 120px;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu{
+    border: 0.5px solid rgba(163, 163, 163, 0.699);
+    border-radius: 10px;
+  }
+  nav .card{
+    font-size: smaller !important;
+  }
+  /*Navbar END*/
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  
+  /*Navbar */
+  nav .logo{
+    width: 150px;
+    height: 100px;
+  }
+  nav .siparis-logo{
+    width: 120px;
+    height: 50px;
+    padding-bottom: 10px;
+    margin-left:50px ;
+  }
+  nav .collapse .nav-item{
+    margin-top: 50px !important;
+    display: block;
+    padding: 3px;
+  }
+  nav .collapse .nav-link{
+    font-size: medium;
+  }
+  nav .dropdown-menu .list-group-horizontal{
+    max-width: 800px;
+    overflow-x:scroll ;
+    max-height: fit-content;
+  }
+  nav .card-img-top{
+    width: 120px;
+    height: 120px;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu{
+    border: 0.5px solid rgba(163, 163, 163, 0.699);
+    border-radius: 10px;
+  }
+  nav .card{
+    font-size: smaller !important;
+  }
+  /*Navbar END*/
+
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+
+  /*Navbar*/
+  nav .dropdown-menu .list-group-horizontal{
     max-width: 1000px;
     overflow-x:scroll ;
     max-height: fit-content;
-}
-/*Navbar END*/
+  }
+  nav .logo{
+    width: 200px;
+    height: 150px;
+  }
+  nav .siparis-logo{
+    width: 200px;
+    height: 70px;
+    padding-bottom: 10px;
+    margin-left:50px ;
+  }
+  nav .collapse .nav-item{
+    margin-top: 70px !important;
+    display: block;
+    padding: 5px;
+  }
+
+  nav .card-img-top{
+    width: 200px;
+    height: 200px;
+
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu{
+    border: 0.5px solid rgba(163, 163, 163, 0.699);
+    border-radius: 10px;
+  }
+  /*Navbar END*/
+
+
+
+
+ }
+
 
 /*Owl Carousel*/
 .carousel-wrap {
     position: relative;
     height: 300px !important;
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   .owl-carousel .owl-nav{
@@ -76,7 +320,7 @@
     pointer-events: none;
     opacity: 0.2;
   }
-
+/*
   .owl-carousel .prev-slide{
       background: url("../img/nav-icon.png") no-repeat scroll 0 0;
       left: -33px;
@@ -91,7 +335,7 @@
   .owl-carousel .next-slide:hover{
     background-position: -24px -53px;
   }
-
+*/
   span.img-text {
     text-decoration: none;
     outline: none;
@@ -113,6 +357,6 @@
   }
   /*Owl Carousel END*/
 
-#sss .card,#hakkimizda .card{
-    border: 0 !important;
-}
+
+
+
