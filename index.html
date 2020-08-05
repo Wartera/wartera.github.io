@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Valantis - Tanıtım Yazısı - Ana Sayfa</title>
+
     <!--Styles File-->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
@@ -17,6 +19,11 @@
     <link rel="stylesheet" href="fonts/Recursive/Recursive-VariableFont_CASL,CRSV,MONO,slnt,wght.ttf">
     <link rel="stylesheet" href="fonts/Righteous/Righteous-Regular.ttf">
     <!--Fonts END-->
+
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.png">
+    <!--Favicon END-->
+
 </head>
 <body>
 
@@ -164,64 +171,76 @@
     <!--Navbar END-->
 
     <!--Carousel Slyder -->
-    <section id="carousel" class="container-fluid ">
-      <div class="carousel-wrap">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-              <img src="https://picsum.photos/640/480?pic=1" />
-              <span class="img-text">nightlife</span>
+    <section id="carousel" class="mt-3">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner skyblue">
+
+          <!-- first slide -->
+          <div class="carousel-item active skyblue">
+            <div class="carousel-caption d-md-block">
+
+              <h3 data-animation="animated bounceInLeft">
+                deneme yazı Slyder 1
+              </h3>
+              <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
+
             </div>
-            <div class="item">
-              <img src="https://picsum.photos/640/480?pic=2" />
-              <span class="img-text">abstract</span>
+          </div>
+
+          <!-- second slide -->
+          <div class="carousel-item skyblue">
+            <div class="carousel-caption d-md-block">
+
+              <h3 class="icon-container" data-animation="animated bounceInDown">
+                <span class="fa fa-heart"></span>
+              </h3>
+              <h3 data-animation="animated bounceInUp">
+                deneme yazı Slyder 2
+              </h3>
+              <h3 data-animation="animated bounceInDown">
+                deneme yazı Slyder 2
+              </h3>
+              <button class="btn btn-primary btn-lg" data-animation="animated zoomInRight">Button</button>
+
             </div>
-            <div class="item">
-              <img src="https://picsum.photos/640/480?pic=3" />
-              <span class="img-text">animals</span>
+          </div>
+
+          <!-- third slide -->
+          <div class="carousel-item skyblue">
+            <div class="carousel-caption d-md-block">
+
+              <h3 class="icon-container" data-animation="animated zoomInLeft">
+                <span class="fa fa-glass"></span>
+              </h3>
+              <h3 data-animation="animated flipInX">
+                deneme yazı Slyder 3
+              </h3>
+              <h3 data-animation="animated flipInY">
+                deneme yazı Slyder 3
+              </h3>
+              <button class="btn btn-primary btn-lg" data-animation="animated lightSpeedIn">Button</button>
+
             </div>
-            <div class="item">
-              <img src="https://picsum.photos/640/480?pic=4" />
-              <span class="img-text">nature</span>
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/640/480?pic=5" />
-              <span class="img-text">business</span>
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/640/480?pic=6" />
-              <span class="img-text">cats</span>
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/640/480?pic=7" />
-              <span class="img-text">city</span>
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/640/480?pic=8" />
-              <span class="img-text">food</span>
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/640/480?pic=9" />
-              <span class="img-text">fashion</span>
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/640/480?pic=10" />
-              <span class="img-text">people</span>
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/640/480?pic=11" />
-              <span class="img-text">sports</span>
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/640/480?pic=12" />
-              <span class="img-text">technics</span>
-            </div>
-            <div class="item">
-              <img src="https://picsum.photos/640/480?pic=13" />
-              <span class="img-text">transport</span>
-            </div>
+          </div>
         </div>
+
+        <!-- controls -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
+
     <!--Carousel Slyder END-->
 
 </header>
@@ -229,11 +248,11 @@
 
   <!--Tanıtım Yazısı-->
   <section id="tanitim">
-    <div class="container bg-light" style="margin-top: 200px;">
+    <div class="container mt-5">
       <div class="row">
 
         <div class="col-sm-6 text-center">
-          <img src="img/canta.png" alt="" class="" style="width: 70px; height: 70px;">
+          <img src="img/canta.png" alt="">
           <p class="mx-auto">
             <h4>Hızlı Yemek Hizmeti</h4>
             Mağaza içi ve dışarı paket servislerinde kaliteden ödün vermeden minimum bekleme sürelerinde hızlı servis yapıyoruz. 
@@ -241,7 +260,7 @@
         </div>
 
         <div class="col-sm-6 text-center">
-          <img src="img/ok.png" alt="" class="" style="width: 70px; height: 70px;">
+          <img src="img/ok.png" alt="">
           <p class="mx-auto">
             <h4>Standart Ürün</h4>
             Standart ürün güvenilirliğimiz ile bütün ürünlerimizi her zaman alıştığınız aynı lezzette sunuyoruz.
@@ -249,7 +268,7 @@
         </div>
 
         <div class="col-sm-6 text-center">
-          <img src="img/el.png" alt="" class="" style="width: 70px; height: 70px;">
+          <img src="img/el.png" alt="">
           <p class="mx-auto">
             <h4>Kolay Erişim</h4>
             Ürünlerimize mağazamızdan, web sayfamızdan ve sipariş hattımızdan ulaşabilirsiniz.
@@ -257,7 +276,7 @@
         </div>
 
         <div class="col-sm-6 text-center">
-          <img src="img/asci.png" alt="" class="" style="width: 70px; height: 70px;">
+          <img src="img/asci.png" alt="">
           <p class="mx-auto">
             <h4>Güler Yüz</h4>
             Valantis her müşterisine güleryüzle hizmet vermektedir.
@@ -273,8 +292,8 @@
   <section id="hakkimizda">
     <div class="container mt-5 text-center shadow">
       <div class="col-12">
-        <div class="card p-5">
-          <h3 class="card-title">Hakkımızda</h3>
+        <div class="card p-4">
+          <h3 class="card-title"><span>Hakkımızda</span></h3>
           <div class="card-body">
             <p class="card-text">
               Valantis; fastfood sektörü içerisinde iyi hizmet vermeyi; kaliteyi uygun fiyata sunmayı hedefler.
@@ -424,37 +443,38 @@
 <footer class="bg-dark mt-5">
     <div class="container py-3">
       <div class="row">
-        <div class="col-sm-4">
+
+        <div class="col-md-4">
           <ul class="list-group ">
-            <li class="list-group-item" style="border: 0;">
+            <li class="list-group-item border-0">
               <h3>İletişim</h3>
             </li>
-            <li class="list-group-item" style="border: 0;"> 
-              <div class="row">
-                <div class="col-3">
-                  <img src="img/konumlogo.png" style="width: 50px; height: 50px;"/>
+            <li class="list-group-item border-0"> 
+              <div class="row text-center">
+                <div class="col-lg-3 ">
+                  <img src="img/konumlogo.png" />
                 </div>  
-                <div class="col-9">
+                <div class="col-lg-9">
                   Yukarı Mah. Şehit Reşat Tuna Tuncel Cad. No:5, 66400 Boğazlıyan/Yozgat
                 </div> 
               </div> 
             </li>
-            <li class="list-group-item" style="border: 0;">
-              <div class="row">
-                <div class="col-3">
-                  <img src="img/tel.png" style="width: 50px; height: 50px;"/>
+            <li class="list-group-item border-0">
+              <div class="row text-center">
+                <div class="col-lg-3">
+                  <img src="img/tel.png"/>
                 </div>  
-                <div class="col-9">
+                <div class="col-lg-9">
                   <a href="tel:0538 610 52 66" style="color: black;" class="text-decoration-none text-monospace font-weight-bolder">0538 610 52 66</a>
                 </div> 
               </div> 
             </li>
-            <li class="list-group-item" style="border: 0;">
-              <div class="row">
-                <div class="col-3">
-                  <img src="img/eposta,.png" style="width: 50px; height: 50px;"/>
+            <li class="list-group-item border-0">
+              <div class="row text-center">
+                <div class="col-lg-3">
+                  <img src="img/eposta,.png"/>
                 </div>  
-                <div class="col-9">
+                <div class="col-lg-9">
                   <a href="mailto:info@valantis.com.tr" 
                   style="font-size: larger;color: black;" 
                   class="text-decoration-none text-monospace font-weight-bolder">
@@ -465,14 +485,15 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-4">
+
+        <div class="col-md-4">
           <ul class="list-group ">
-            <li class="list-group-item" style="border: 0;"> 
-              <div class="row">
-                <div class="col-3">
-                  <img src="img/saat.png" style="width: 50px; height: 50px;"/>
+            <li class="list-group-item border-0"> 
+              <div class="row text-center">
+                <div class="col-lg-3">
+                  <img src="img/saat.png"/>
                 </div>  
-                <div class="col-9">
+                <div class="col-lg-9">
                   <b>Pazartesi</b> - <b>Cumartesi</b> 10:00 - 20:00
                   <b>Pazar</b> 12:00 - 20:00
                 </div> 
@@ -480,32 +501,34 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-4 text-center">
+
+        <div class="col-md-4 text-center">
           <ul class="list-group ">
-            <li class="list-group-item" style="border: 0;">
+            <li class="list-group-item border-0">
               <h4>Bizi Takip Edin!</h4>
             </li>
-            <li class="list-group-item" style="border: 0;"> 
+            <li class="list-group-item border-0"> 
               <div class="row text-center">
                 <div class="col-4">
                   <a href="#">
-                    <img src="img/instagramlogo.png" style="width: 50px; height: 50px;"/>
+                    <img src="img/instagramlogo.png"/>
                   </a>
                 </div>  
                 <div class="col-4">
                   <a href="#">
-                    <img src="img/facelogo.png" style="width: 50px; height: 50px;"/>
+                    <img src="img/facelogo.png"/>
                   </a>
                 </div> 
                 <div class="col-4">
                   <a href="#">
-                    <img src="img/twitterlogo.png" style="width: 50px; height: 50px;"/>
+                    <img src="img/twitterlogo.png"/>
                   </a>
                 </div> 
               </div> 
             </li>
           </ul>
         </div>
+
       </div>
     </div>
 </footer>
@@ -518,9 +541,46 @@
 <script src="js/bootstrap-dropdownhover.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script>
-new WOW().init();
+  new WOW().init();
 </script>
 <script src="js/main.js"></script>
+<script>
+  (function($) {
+    //Function to animate slider captions
+    function doAnimations(elems) {
+      //Cache the animationend event in a variable
+      var animEndEv = "webkitAnimationEnd animationend";
+
+      elems.each(function() {
+        var $this = $(this),
+          $animationType = $this.data("animation");
+        $this.addClass($animationType).one(animEndEv, function() {
+          $this.removeClass($animationType);
+        });
+      });
+    }
+
+    //Variables on page load
+    var $myCarousel = $("#carouselExampleIndicators"),
+      $firstAnimatingElems = $myCarousel
+        .find(".carousel-item:first")
+        .find("[data-animation ^= 'animated']");
+
+    //Initialize carousel
+    $myCarousel.carousel();
+
+    //Animate captions in first slide on page load
+    doAnimations($firstAnimatingElems);
+
+    //Other slides to be animated on carousel slide event
+    $myCarousel.on("slide.bs.carousel", function(e) {
+      var $animatingElems = $(e.relatedTarget).find(
+        "[data-animation ^= 'animated']"
+      );
+      doAnimations($animatingElems);
+    });
+  })(jQuery);
+</script>
 <!--Scripts File END-->
 </body>
 </html>
